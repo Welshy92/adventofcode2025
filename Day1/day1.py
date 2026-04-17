@@ -1,5 +1,6 @@
+# This reads the input file, removes the 'R' and 'L' characters, replaces them with positive and negative signs respectively,
+# and converts the resulting strings into integers to create a list of turns for the safe lock.
 with open("input.txt", 'r') as f:
-	# dial = f.readlines()
 	safe_lock = list(map(int, f.read().replace('R', '').replace('L', '-').split()))
 
 ### PART 1 ###
